@@ -1,6 +1,7 @@
 interface Event {
    public void start();
 }
+
 interface Sports {
    public void play();
 }
