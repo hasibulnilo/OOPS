@@ -1,0 +1,82 @@
+******overloading******
+
+public class Overloading {
+    void show(){
+        System.out.println("NO perameter");
+        }
+    void show(int a){
+            System.out.println("a:"+a);
+    }
+}
+___________Next class_________
+public class Overloaddemo {
+ 
+        public static void main(String[]args){
+         Overloading ob=new Overloading() ;      
+    ob.show();
+    ob.show(12);
+        }
+}
+
+
+
+*********overriding********
+
+public class Vehicle{
+    void run(){
+        System.out.println("Vhehicles is running");     
+    }
+    
+}
+_____________Next class_________
+public class Bike extends Vehicle{
+    void run(){
+        System.out.println("Bike is running");
+        
+    }
+    public static void main(String args[]){
+        Bike obj=new Bike();
+        obj.run();
+    }
+}
+
+
+
+**************Encapsulation**************
+
+public class Person {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+  
+   public String getName(){
+        return name;
+    }
+    public int getAge(){
+        return age;
+    }
+    public static void main(String [] args){
+        Person person1=new Person("Niloy",25);
+        System.out.println("Name:"+person1.getName());
+        System.out.println("Age:"+person1.getAge());
+    }
+}
+
+
+*************Abstraction************
+abstract class Vehicle{ 
+abstract void run(); 
+} 
+________new class________
+class Bike extends Vehicle{ 
+void run(){System.out.println("Bike is running");} 
+public static void main(String args[]){ 
+Vehicle obj = new Bike(); 
+obj.run(); 
+} 
+}
+
